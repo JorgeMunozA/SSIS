@@ -1,0 +1,24 @@
+{
+	"name": "Trigger_l8s",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipeline_l8s",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 1,
+				"startTime": "2023-09-02T02:04:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
