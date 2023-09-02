@@ -1,0 +1,9 @@
+{
+	"name": "SSISServer2023",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "31b22f14-0b18-4e6b-ac96-8cd69f7cf99f",
+		"tenantId": "73cc9a1c-4390-402b-83ba-ac703933f97d"
+	}
+}
