@@ -6,8 +6,8 @@
 		"type": "SqlServer",
 		"typeProperties": {
 			"connectionString": "integrated security=True;data source=52.180.136.58;initial catalog=AdventureWorks2022",
-			"userName": "SQLServer\\jorge",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEUzQkM0OTE5LUE0MTMtNEYwMy1BMjYzLTA5MEMxREI0MjJEQV9kNzdhYjVjOC04MDE1LTRkMTQtOTdiZS1hMTk5YTE1ZDhjYjkiDQp9"
+			"userName": "jorge",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEUzQkM0OTE5LUE0MTMtNEYwMy1BMjYzLTA5MEMxREI0MjJEQV83NzY4ZmEzMy00NGY2LTQ0MmUtYWVkZi0zOWIwNzljODRjNDQiDQp9"
 		}
 	}
 }
