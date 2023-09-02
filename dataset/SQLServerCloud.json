@@ -1,0 +1,12 @@
+{
+	"name": "SQLServerCloud",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServerVM",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
