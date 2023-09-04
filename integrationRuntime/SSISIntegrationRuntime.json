@@ -1,0 +1,28 @@
+{
+	"name": "SSISIntegrationRuntime",
+	"properties": {
+		"type": "Managed",
+		"description": "ETLServer",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Central US",
+				"nodeSize": "Standard_D2_v3",
+				"numberOfNodes": 1,
+				"maxParallelExecutionsPerNode": 2
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "azuresqldatabasesserver.database.windows.net",
+					"catalogAdminUserName": "jorge",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "Basic"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
