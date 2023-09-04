@@ -24,7 +24,14 @@
 						"referenceName": "SSISIntegrationRuntime",
 						"type": "IntegrationRuntimeReference"
 					},
-					"loggingLevel": "Basic"
+					"loggingLevel": "Verbose",
+					"packageConnectionManagers": {
+						"Snakes": {
+							"ConnectionString": {
+								"value": "https://ssisstoragejorge.blob.core.windows.net/localfiles/snakes_count_10000.csv"
+							}
+						}
+					}
 				}
 			}
 		],
