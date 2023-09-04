@@ -8,10 +8,16 @@
 		"AzureSqlDatabase_connectionString": {
 			"value": ""
 		},
-		"SqlServer1_connectionString": {
+		"SqlServerVM_connectionString": {
 			"value": ""
 		},
-		"SqlServerVM_connectionString": {
+		"SSISIntegrationRuntime_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"value": "azuresqldatabasesserver.database.windows.net"
+		},
+		"SSISIntegrationRuntime_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"value": "jorge"
+		},
+		"SSISIntegrationRuntime_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
 			"value": ""
 		}
 	}
