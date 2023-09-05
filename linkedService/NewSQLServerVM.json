@@ -1,0 +1,16 @@
+{
+	"name": "NewSQLServerVM",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=20.98.156.252;initial catalog=AdventureWorks2022;user id=sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwNjliYWM3NS1kYTE1LTQwNWMtYjIxYS1jMGY3YWFlYjdlNDciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "selfhosted",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
