@@ -1,0 +1,32 @@
+{
+	"name": "df_Employees",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "SQLServerCloud",
+						"type": "DatasetReference"
+					},
+					"name": "SourceDataset",
+					"description": "HumanResourcesEmployees"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "TotalizeEmployees"
+				}
+			],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     query: 'SELECT [BusinessEntityID]\\n      ,[NationalIDNumber]\\n      ,[LoginID]\\n      ,[OrganizationNode]\\n      ,[OrganizationLevel]\\n      ,[JobTitle]\\n      ,[BirthDate]\\n      ,[MaritalStatus]\\n      ,[Gender]\\n      ,[HireDate]\\n      ,[SalariedFlag]\\n      ,[VacationHours]\\n      ,[SickLeaveHours]\\n      ,[CurrentFlag]\\n      ,[rowguid]\\n      ,[ModifiedDate]\\n  FROM [HumanResources].[Employee]\\n',",
+				"     format: 'query') ~> SourceDataset",
+				"SourceDataset aggregate() ~> TotalizeEmployees"
+			]
+		}
+	}
+}
