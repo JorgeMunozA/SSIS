@@ -13,7 +13,11 @@
 					"description": "HumanResourcesEmployees"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"name": "sink1"
+				}
+			],
 			"transformations": [
 				{
 					"name": "aggregate1"
@@ -47,7 +51,14 @@
 				"          JobTitle),",
 				"     LoginID = count(1),",
 				"          VacationHours = sum(VacationHours),",
-				"          SickLeaveHours = sum(SickLeaveHours)) ~> aggregate1"
+				"          SickLeaveHours = sum(SickLeaveHours)) ~> aggregate1",
+				"aggregate1 sink(validateSchema: false,",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     store: 'cache',",
+				"     format: 'inline',",
+				"     output: true,",
+				"     saveOrder: 1) ~> sink1"
 			]
 		}
 	}
